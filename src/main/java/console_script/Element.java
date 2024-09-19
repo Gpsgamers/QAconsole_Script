@@ -8,4 +8,20 @@ public class Element {
 	public static By password = By.xpath("//*[@label ='password']");
 	public static By sign_in = By.xpath("//*[text() ='Sign In']");
 	
+	// Analytics page
+	/// recent activity section
+	public static String plantype,button_name,index ; 
+	public static By plan_Type_Dropdown = By.xpath("//*[@for ='planTypeId']");
+	public static By plan_type_selection = By.xpath("//button[@data-value ='"+plantype+"']");
+	public static By Top_Active_Users = By .xpath("(//span[text()='#"+index+"2'])[1]");
+	//// graph element
+	public static By analysisTabs = By.xpath("//button[text() = '"+button_name+"']");
+	public static By analysisTabs_indexed = By.xpath("(//button[text() = '"+button_name+"'])["+index+"]");
+	public static By values = By.xpath("(//div[@class='analysisValue'])["+index+"]");
+	public static By values_span = By.xpath("(//div[@class='analysisValue']/span)["+index+"]");
+	public static By graph_layer_indexed = By.xpath("(//*[@class='recharts-cartesian-grid-horizontal'])["+index+"]");
+	public static By graph_circle = By.xpath("//circle");
+	
+	
+	
 }

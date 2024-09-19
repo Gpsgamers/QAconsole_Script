@@ -1,5 +1,6 @@
 package console_script;
 
+
 import org.openqa.selenium.WebDriver;
 
 public class method extends Element {
