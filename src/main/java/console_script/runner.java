@@ -27,6 +27,7 @@ public class runner extends method {
 	@Given("on {int}")
 	public void on(Integer int1) throws InterruptedException {
 		WebElement Top_active_users = driver.findElement(Top_Active_Users(int1));
+		System.out.println(Top_active_users.getClass());
 		if(Top_active_users.getClass().equals("active")) {
 			System.out.println("element is active");
 		}else {
