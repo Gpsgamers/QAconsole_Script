@@ -10,7 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class base extends method {
+public class runner extends method {
 	@Given("enter the URL")
 	public void enter_the_url() {
 		driver = new ChromeDriver();
@@ -24,7 +24,6 @@ public class base extends method {
 		login("rahul.s@contus.in", "SuperAdmin!@#$1234");
 	}
 	//
-	
 	@Given("on {int}")
 	public void on(Integer int1) throws InterruptedException {
 		WebElement Top_active_users = driver.findElement(Top_Active_Users(int1));
