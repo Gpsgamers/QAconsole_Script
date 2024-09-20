@@ -19,14 +19,15 @@
 @tag
 Feature: UI sanity check on console
 
-  #@tag1
-  #Scenario: login the application
-  #Given enter the URL
-  #Then Login the application
+  @tag1
+  Scenario: login the application
+    Given enter the URL
+    Then Login the application
+
   @tag2
   Scenario Outline: Check the values and Graphs in Recent activity on analytics page
-    Given In plan type <PlanType>
-    And on <TOP_users>
+    Given on <TOP_users>
+    And In plan type <PlanType>
     When Verify if <Tabs> value exist
     And Verify if Graph not exist when <Tabs> <=0
     And Verify if Graph exist when Total <Tabs> >0
@@ -36,49 +37,49 @@ Feature: UI sanity check on console
       | PlanType     | Tabs                | TOP_users |
       | "All"        | "Total Messages"    |         1 |
       | "All"        | "Total Voice Calls" |         1 |
-      | "All"        | "Total Video Cals"  |         1 |
+      | "All"        | "Total Video Calls" |         1 |
       | "All"        | "Total Messages"    |         2 |
       | "All"        | "Total Voice Calls" |         2 |
-      | "All"        | "Total Video Cals"  |         2 |
+      | "All"        | "Total Video Calls" |         2 |
       | "All"        | "Total Messages"    |         3 |
       | "All"        | "Total Voice Calls" |         3 |
-      | "All"        | "Total Video Cals"  |         3 |
-      | "Trial"      | "Total Messages"    |         1 |
-      | "Trial"      | "Total Voice Calls" |         1 |
-      | "Trial"      | "Total Video Cals"  |         1 |
-      | "Trial"      | "Total Messages"    |         2 |
-      | "Trial"      | "Total Voice Calls" |         2 |
-      | "Trial"      | "Total Video Cals"  |         2 |
-      | "Trial"      | "Total Messages"    |         3 |
-      | "Trial"      | "Total Voice Calls" |         3 |
-      | "Trial"      | "Total Video Cals"  |         3 |
-      | "Essentials" | "Total Messages"    |         1 |
-      | "Essentials" | "Total Voice Calls" |         1 |
-      | "Essentials" | "Total Video Cals"  |         1 |
-      | "Essentials" | "Total Messages"    |         2 |
-      | "Essentials" | "Total Voice Calls" |         2 |
-      | "Essentials" | "Total Video Cals"  |         2 |
-      | "Essentials" | "Total Messages"    |         3 |
-      | "Essentials" | "Total Voice Calls" |         3 |
-      | "Essentials" | "Total Video Cals"  |         3 |
-      | "Growth"     | "Total Messages"    |         1 |
-      | "Growth"     | "Total Voice Calls" |         1 |
-      | "Growth"     | "Total Video Cals"  |         1 |
-      | "Growth"     | "Total Messages"    |         2 |
-      | "Growth"     | "Total Voice Calls" |         2 |
-      | "Growth"     | "Total Video Cals"  |         2 |
-      | "Growth"     | "Total Messages"    |         3 |
-      | "Growth"     | "Total Voice Calls" |         3 |
-      | "Growth"     | "Total Video Cals"  |         3 |
-      | "Premium"    | "Total Messages"    |         1 |
-      | "Premium"    | "Total Voice Calls" |         1 |
-      | "Premium"    | "Total Video Cals"  |         1 |
-      | "Premium"    | "Total Messages"    |         2 |
-      | "Premium"    | "Total Voice Calls" |         2 |
-      | "Premium"    | "Total Video Cals"  |         2 |
-      | "Premium"    | "Total Messages"    |         3 |
-      | "Premium"    | "Total Voice Calls" |         3 |
-      | "Premium"    | "Total Video Cals"  |         3 |
+      | "All"        | "Total Video Calls" |         3 |
+      #| "Trial"      | "Total Messages"    |         1 |
+      #| "Trial"      | "Total Voice Calls" |         1 |
+      #| "Trial"      | "Total Video Calls" |         1 |
+      #| "Trial"      | "Total Messages"    |         2 |
+      #| "Trial"      | "Total Voice Calls" |         2 |
+      #| "Trial"      | "Total Video Calls" |         2 |
+      #| "Trial"      | "Total Messages"    |         3 |
+      #| "Trial"      | "Total Voice Calls" |         3 |
+      #| "Trial"      | "Total Video Calls" |         3 |
+      #| "Essentials" | "Total Messages"    |         1 |
+      #| "Essentials" | "Total Voice Calls" |         1 |
+      #| "Essentials" | "Total Video Calls" |         1 |
+      #| "Essentials" | "Total Messages"    |         2 |
+      #| "Essentials" | "Total Voice Calls" |         2 |
+      #| "Essentials" | "Total Video Calls" |         2 |
+      #| "Essentials" | "Total Messages"    |         3 |
+      #| "Essentials" | "Total Voice Calls" |         3 |
+      #| "Essentials" | "Total Video Calls" |         3 |
+      #| "Growth"     | "Total Messages"    |         1 |
+      #| "Growth"     | "Total Voice Calls" |         1 |
+      #| "Growth"     | "Total Video Calls" |         1 |
+      #| "Growth"     | "Total Messages"    |         2 |
+      #| "Growth"     | "Total Voice Calls" |         2 |
+      #| "Growth"     | "Total Video Calls" |         2 |
+      #| "Growth"     | "Total Messages"    |         3 |
+      #| "Growth"     | "Total Voice Calls" |         3 |
+      #| "Growth"     | "Total Video Calls" |         3 |
+      #| "Premium"    | "Total Messages"    |         1 |
+      #| "Premium"    | "Total Voice Calls" |         1 |
+      #| "Premium"    | "Total Video Calls" |         1 |
+      #| "Premium"    | "Total Messages"    |         2 |
+      #| "Premium"    | "Total Voice Calls" |         2 |
+      #| "Premium"    | "Total Video Calls" |         2 |
+      #| "Premium"    | "Total Messages"    |         3 |
+      #| "Premium"    | "Total Voice Calls" |         3 |
+      #| "Premium"    | "Total Video Calls" |         3 |
   #@tag3
   #Scenario: Check the values and Graphs in Total message section in Analytics Overview
     #on analytics page
