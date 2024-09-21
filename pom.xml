@@ -62,9 +62,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>appium</groupId>
-			<artifactId>Android_automation</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.11.0</version> <!-- Check for the latest version -->
 		</dependency>
 	</dependencies>
 </project>

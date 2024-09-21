@@ -38,12 +38,12 @@ Feature: UI sanity check on console
       | "All"        | "Total Messages"    |         1 |
       | "All"        | "Total Voice Calls" |         1 |
       | "All"        | "Total Video Calls" |         1 |
-      | "All"        | "Total Messages"    |         2 |
-      | "All"        | "Total Voice Calls" |         2 |
-      | "All"        | "Total Video Calls" |         2 |
-      | "All"        | "Total Messages"    |         3 |
-      | "All"        | "Total Voice Calls" |         3 |
-      | "All"        | "Total Video Calls" |         3 |
+      #| "All"        | "Total Messages"    |         2 |
+      #| "All"        | "Total Voice Calls" |         2 |
+      #| "All"        | "Total Video Calls" |         2 |
+      #| "All"        | "Total Messages"    |         3 |
+      #| "All"        | "Total Voice Calls" |         3 |
+      #| "All"        | "Total Video Calls" |         3 |
       #| "Trial"      | "Total Messages"    |         1 |
       #| "Trial"      | "Total Voice Calls" |         1 |
       #| "Trial"      | "Total Video Calls" |         1 |

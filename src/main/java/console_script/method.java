@@ -9,10 +9,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class method extends Element {
 	public static WebDriver driver;
-	public static Robot action;
+	public static Actions actions ;
 
 	public static void login(String Email, String Password) {
 		driver.findElement(emailfield).sendKeys(Email);
@@ -33,25 +34,25 @@ public class method extends Element {
 		return f;
 	}
 
-//	public static void takeScreenshot(String fileName) {
-//		TakesScreenshot screenshot = (TakesScreenshot) driver;
-//		File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
-//		File destFile = new File("./screen shot" + fileName);
-//		try {
-//			FileUtils.copyFile(srcFile, destFile);
-//			System.out.println("Screenshot saved to: " + destFile.getAbsolutePath());
-//		} catch (IOException e) {
-//			System.out.println("Failed to save screenshot: " + e.getMessage());
-//		}
-//	}
-//
-//	public static void executeSafely(Runnable operation) {
-//		try {
-//			operation.run();
-//		} catch (Exception e) {
-//			String filename = "screenshot_on_failure" + Math.random() + ".png";
-//			takeScreenshot(filename);
-//			System.out.println(e);
-//		}
-//	}
+	public static void takeScreenshot(String fileName) {
+		TakesScreenshot screenshot = (TakesScreenshot) driver;
+		File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
+		File destFile = new File("./screen shot" + fileName);
+		try {
+			FileUtils.copyFile(srcFile, destFile);
+			System.out.println("Screenshot saved to: " + destFile.getAbsolutePath());
+		} catch (IOException e) {
+			System.out.println("Failed to save screenshot: " + e.getMessage());
+		}
+	}
+
+	public static void executeSafely(Runnable operation) {
+		try {
+			operation.run();
+		} catch (Exception e) {
+			String filename = "screenshot_on_failure" + Math.random() + ".png";
+			takeScreenshot(filename);
+			System.out.println(e);
+		}
+	}
 }

@@ -10,7 +10,6 @@ public class Element {
 	
 	// Analytics page
 	/// recent activity section
-	public static String button_name,index ; 
 	public static By plan_Type_Dropdown = By.xpath("//*[@for ='planTypeId']");
 	public static By plan_type_selection(String plantype) { 
 		return By.xpath("//button[@data-value ='"+plantype+"']");
@@ -31,7 +30,12 @@ public class Element {
 	public static By values_span(int index){
 		return By.xpath("(//div[@class='analysisValue']/span)["+index+"]");
 	}
-	public static By graph_layer_indexed = By.xpath("(//*[@class='recharts-cartesian-grid-horizontal'])["+index+"]");
+	public static By graph_Xaxis (int index) {
+		return By.xpath("(//*[@class ='recharts-layer recharts-cartesian-axis recharts-xAxis xAxis'])["+index+"]");
+	}
+	public static By graph_Yaxis (int index) {
+		return By.xpath("(//*[@class ='recharts-layer recharts-cartesian-axis recharts-yAxis yAxis'])["+index+"]");
+	}
 	public static By graph_circle = By.xpath("//circle");
 	
 	

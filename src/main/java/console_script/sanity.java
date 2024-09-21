@@ -1,9 +1,12 @@
 package console_script;
 
+import java.awt.AWTException;
+import java.awt.Robot;
 import java.time.Duration;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
@@ -46,15 +49,23 @@ public class sanity extends method {
 	public void verify_if_value_exist(String string) throws InterruptedException {
 		driver.findElement(analysisTabs(string)).click();
 		WebElement value = driver.findElement(values(1));
-//		Assert.assertTrue(value.isDisplayed(), "element not displayed");
-//		System.out.println(numberExtract(value)+"string");
-		Assert.assertTrue(numberExtract(value)>=0,"number is not displayed");
+		Assert.assertTrue(value.isDisplayed(), "element not displayed");
+		Assert.assertTrue(numberExtract(value) >= 0, "number is not displayed");
 		Thread.sleep(500);
 	}
 
 	@When("Verify if Graph not exist when {string} <={int}")
-	public void verify_if_graph_not_exist_when(String string, Integer int1) {
-		System.out.println();
+	public void verify_if_graph_not_exist_when(String string, Integer int1) throws AWTException {
+		WebElement value = driver.findElement(values(1));
+		System.out.println(value.getText());
+		WebElement graphXaxis = driver.findElement(graph_Xaxis(1));
+		WebElement graphYaxis = driver.findElement(graph_Yaxis(1));
+		if (numberExtract(value) == 0) {
+			System.out.println(numberExtract(value));
+			Assert.assertTrue(!graphXaxis.isDisplayed() && !graphYaxis.isDisplayed(),"Value is not dispalyed with graph");
+		} else if(numberExtract(value) >= 0) {
+			Assert.assertTrue(graphXaxis.isDisplayed() && graphYaxis.isDisplayed(),"graph is not displayed");
+		}
 	}
 
 	@When("Verify if Graph exist when Total {string} >{int}")
