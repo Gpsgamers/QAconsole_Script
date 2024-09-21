@@ -22,9 +22,15 @@ public class Element {
 	public static By analysisTabs(String button_name) {
 		return By.xpath("//button[text() = '"+button_name+"']");
 	}
-	public static By analysisTabs_indexed = By.xpath("(//button[text() = '"+button_name+"'])["+index+"]");
-	public static By values = By.xpath("(//div[@class='analysisValue'])["+index+"]");
-	public static By values_span = By.xpath("(//div[@class='analysisValue']/span)["+index+"]");
+	public static By analysisTabs_indexed (String button_name, int index) {
+		return By.xpath("(//button[text() = '"+button_name+"'])["+index+"]");
+	}
+	public static By values(int index) {
+		return By.xpath("(//div[@class='analysisValue'])["+index+"]");
+	}
+	public static By values_span(int index){
+		return By.xpath("(//div[@class='analysisValue']/span)["+index+"]");
+	}
 	public static By graph_layer_indexed = By.xpath("(//*[@class='recharts-cartesian-grid-horizontal'])["+index+"]");
 	public static By graph_circle = By.xpath("//circle");
 	

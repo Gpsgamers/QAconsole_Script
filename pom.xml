@@ -28,7 +28,8 @@
 			<version>7.10.2</version>
 			<scope>test</scope>
 		</dependency>
-		
+
+
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -43,7 +44,7 @@
 			<artifactId>selenium-chrome-driver</artifactId>
 			<version>4.24.0</version>
 		</dependency>
-		
+
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
 		<dependency>
@@ -60,5 +61,10 @@
 			<version>4.24.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>appium</groupId>
+			<artifactId>Android_automation</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
