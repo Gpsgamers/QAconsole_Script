@@ -7,7 +7,7 @@ public class Element {
 	public static By emailfield = By.xpath("//*[@label ='email']");
 	public static By password = By.xpath("//*[@label ='password']");
 	public static By sign_in = By.xpath("//*[text() ='Sign In']");
-	
+	public static By pageloader = By.xpath("//div[@class='pageLoader ']");
 	// Analytics page
 	/// recent activity section
 	public static By plan_Type_Dropdown = By.xpath("//*[@for ='planTypeId']");
@@ -31,13 +31,10 @@ public class Element {
 		return By.xpath("(//div[@class='analysisValue']/span)["+index+"]");
 	}
 	public static By graph_Xaxis (int index) {
-		return By.xpath("(//*[@class ='recharts-layer recharts-cartesian-axis recharts-xAxis xAxis'])["+index+"]");
+		return By.xpath("(//div[@class='recharts-wrapper'])["+index+"]//*[@class='recharts-layer recharts-cartesian-axis recharts-xAxis xAxis']");
 	}
 	public static By graph_Yaxis (int index) {
-		return By.xpath("(//*[@class ='recharts-layer recharts-cartesian-axis recharts-yAxis yAxis'])["+index+"]");
+		return By.xpath("(//div[@class='recharts-wrapper'])["+index+"]//*[@class='recharts-layer recharts-cartesian-axis recharts-yAxis yAxis']");
 	}
-	public static By graph_circle = By.xpath("//circle");
-	
-	
 	
 }
