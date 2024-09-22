@@ -120,3 +120,10 @@ Feature: UI sanity check on console
       | "Total Calls" |
       | "Voice Calls" |
       | "Video Calls" |
+      
+   # Quick over view section
+   Scenario: check the total customers count on the quick overview
+   When  click on the view details on the Total customers
+   Then total customer value on the 
+     
+      

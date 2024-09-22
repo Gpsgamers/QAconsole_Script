@@ -21,7 +21,7 @@ public class sanity extends method {
 	public void enter_the_url() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://console.mirrorfly.com");
 	}
 
