@@ -1,10 +1,11 @@
 package console_script;
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-	    features = "src\\main\\java\\feature_file\\sanity.feature", // Path to feature files
-	    glue = {"stepDefinitions"},               // Package for step definitions
+	    features = "src\\main\\java\\feature_file\\", // Path to feature files
+	    glue = {"console_script"},               // Package for step definitions
 	    plugin = {
 	        "pretty",                              // For console output
 	        "html:target/cucumber-reports/Cucumber.html",   // HTML report
@@ -12,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 	    },
 	    monochrome = true                          // To make console output more readable
 	)
-public class Runner {
+public class Runner extends AbstractTestNGCucumberTests {
 
 	
 	

@@ -27,13 +27,13 @@ public class sanity extends method {
 	@Then("Login the application")
 	public void login_the_application() throws InterruptedException {
 		login("rahul.s@contus.in", "SuperAdmin!@#$1234");
+		Thread.sleep(4000);
 	}
 
 	//
 	@Given("on {int}")
 	public void on(Integer int1) throws InterruptedException {
 //		wait.until(ExpectedConditions.invisibilityOfElementLocated(pageloader));
-		Thread.sleep(2000);
 		WebElement Top_active_users = driver.findElement(Top_Active_Users(int1));
 		if (Top_active_users.getAttribute("class").equals("active") == false) {
 			Top_active_users.click();
@@ -44,6 +44,7 @@ public class sanity extends method {
 	public void in_plan_type(String string) throws InterruptedException {
 		driver.findElement(plan_Type_Dropdown).click();
 		driver.findElement(plan_type_selection(string)).click();
+		Thread.sleep(2000);
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(pageloader));
 	}
 
@@ -52,6 +53,7 @@ public class sanity extends method {
 		driver.findElement(analysisTabs(string)).click();
 		WebElement value = driver.findElement(values(1));
 		System.out.println(numberExtract(value));
+		System.out.println(value.getText());
 		Assert.assertTrue(value.isDisplayed(), "element not displayed");
 		Assert.assertTrue(numberExtract(value) >= 0, "number is not displayed");
 	}
@@ -79,6 +81,7 @@ public class sanity extends method {
 	
 	@Given("Select platform {string}")
 	public void select_platform(String string) throws InterruptedException {
+		Thread.sleep(2000);
 		driver.findElement(analysisTabs(string)).click();
 	}
 
@@ -98,7 +101,8 @@ public class sanity extends method {
 	
 	
 	@Given("Select calltype {string}")
-	public void select_calltype(String string) {
+	public void select_calltype(String string) throws InterruptedException {
+		Thread.sleep(2000);
 		driver.findElement(analysisTabs_indexed(string,1)).click();
 	}
 	
@@ -118,7 +122,8 @@ public class sanity extends method {
 	///
 
 	@Given("Select call {string}")
-	public void select_call(String string) {
+	public void select_call(String string) throws InterruptedException {
+		Thread.sleep(2000);
 		driver.findElement(analysisTabs_indexed(string,2)).click();
 	}
 

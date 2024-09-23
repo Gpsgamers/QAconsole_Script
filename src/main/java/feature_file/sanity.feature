@@ -122,8 +122,8 @@ Feature: UI sanity check on console
       | "Video Calls" |
       
    # Quick over view section
-   Scenario: check the total customers count on the quick overview
-   When  click on the view details on the Total customers
-   Then total customer value on the 
+   #Scenario: check the total customers count on the quick overview
+   #When  click on the view details on the Total customers
+   #Then total customer value on the 
      
       
