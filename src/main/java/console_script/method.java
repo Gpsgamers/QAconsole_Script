@@ -15,9 +15,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 public class method extends Element {
-	public static WebDriver driver;
 	public static Actions actions;
-
+	public static WebDriver driver;
 	public static void scrollToelement(WebElement elementToScroll) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", elementToScroll);
