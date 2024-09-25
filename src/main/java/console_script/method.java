@@ -16,7 +16,7 @@ import org.testng.Assert;
 
 public class method extends Element {
 	public static Actions actions;
-	public static WebDriver driver;
+//	public static WebDriver driver;
 	public static void scrollToelement(WebElement elementToScroll) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", elementToScroll);
@@ -90,8 +90,7 @@ public class method extends Element {
 		}
 	}
 
-	public static void Graph_and_value(By Value, By graphXaxis, By graphYaxis) {
-		WebElement value = driver.findElement(Value);
+	public static void Graph_and_value(WebElement Values, By graphXaxis, By graphYaxis) {
 		Boolean GraphXaxis = false;
 		Boolean GraphYaxis = false;
 		try {
@@ -102,9 +101,9 @@ public class method extends Element {
 			GraphYaxis = false;
 		}
 		System.out.println(GraphXaxis + " " + GraphYaxis);
-		if (numberExtract(value) == 0) {
+		if (numberExtract(Values) == 0) {
 			Assert.assertTrue(!GraphXaxis && !GraphYaxis, "Value is not dispalyed with graph");
-		} else if (numberExtract(value) >= 0) {
+		} else if (numberExtract(Values) >= 0) {
 			Assert.assertTrue(GraphXaxis && GraphYaxis, "graph is not displayed");
 		}
 	}

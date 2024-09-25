@@ -8,6 +8,10 @@ public class Element extends Runner {
 	public static By password = By.xpath("//*[@label ='password']");
 	public static By sign_in = By.xpath("//*[text() ='Sign In']");
 	public static By pageloader = By.xpath("//div[@class='pageLoader ']");
+	//logout
+	public static By profile_initial = By.xpath("//span[@class='profileInitial']");
+	public static By logout = By.xpath("//*[@class='logout']");
+	public static By logout_btn = By.xpath("//*[text()='logout']");
 	// Analytics page
 	/// recent activity section
 	public static By plan_Type_Dropdown = By.xpath("//*[@for ='planTypeId']");

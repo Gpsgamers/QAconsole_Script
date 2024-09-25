@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>22/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>44/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 25 19:18:15 IST 2024</td>
+<td>Started on:</td><td>Wed Sep 25 23:54:39 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>114 seconds (114902 ms)</td>
+<tr><td>Total time:</td><td>32 seconds (32065 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,93 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "logout the application", "UI sanity check on console Admin"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class=&apos;logout&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51715/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b859f3f1addbfeab22f3d884a3e51836
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at console_script.sanity.click_on_the_logout_from_the_dropdown(sanity.java:162)
+	at ✽.click on the logout from the dropdown(file:///C:/Users/guru/Desktop/Automation_script/QAconsole_Script/src/main/java/feature_file/sanity_Admin.feature:108)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2039264985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2039264985'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class=&apos;logout&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51715/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b859f3f1addbfeab22f3d884a3e51836
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at console_script.sanity.click_on_the_logout_from_the_dropdown(sanity.java:162)
+	at ✽.click on the logout from the dropdown(file:///C:/Users/guru/Desktop/Automation_script/QAconsole_Script/src/main/java/feature_file/sanity_Admin.feature:108)
+</pre></div></td>
+<td>10</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "logout the application", "UI sanity check on console Superadmin"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;logout&apos;]&quot;}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b859f3f1addbfeab22f3d884a3e51836, findElement {value=//*[text()=&apos;logout&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51715/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b859f3f1addbfeab22f3d884a3e51836
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at console_script.sanity.click_on_the_logout_button(sanity.java:168)
+	at ✽.click on the logout button(file:///C:/Users/guru/Desktop/Automation_script/QAconsole_Script/src/main/java/feature_file/sanity_SA.feature:109)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1078328607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1078328607'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;logout&apos;]&quot;}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b859f3f1addbfeab22f3d884a3e51836, findElement {value=//*[text()=&apos;logout&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51715/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b859f3f1addbfeab22f3d884a3e51836
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at console_script.sanity.click_on_the_logout_button(sanity.java:168)
+	at ✽.click on the logout button(file:///C:/Users/guru/Desktop/Automation_script/QAconsole_Script/src/main/java/feature_file/sanity_SA.feature:109)
+</pre></div></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,115 +162,225 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "login the application", "UI sanity check on console"</td>
-<td></td>
-<td>11</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total message section in Analytics Overview", "UI sanity check on console"</td>
-<td></td>
-<td>0</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>4</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console"</td>
-<td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
-<tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console"</td>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "login the application Superadmin", "UI sanity check on console Superadmin"</td>
 <td></td>
 <td>3</td>
-<td>console_script.Runner@7c137fd5</td></tr>
+<td>console_script.Runner@7d8995e</td></tr>
 <tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console"</td>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin"</td>
 <td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
 <tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console"</td>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Admin"</td>
 <td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
 <tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console"</td>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin"</td>
 <td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
 <tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console"</td>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "login the application Admin", "UI sanity check on console Admin"</td>
 <td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
+<td>3</td>
+<td>console_script.Runner@7d8995e</td></tr>
 <tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console"</td>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin"</td>
 <td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
 <tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console"</td>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin"</td>
 <td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
 <tr>
-<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console"</td>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Superadmin"</td>
 <td></td>
-<td>2</td>
-<td>console_script.Runner@7c137fd5</td></tr>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total message section in Analytics Overview", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total message section in Analytics Overview", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
+<tr>
+<td title='console_script.Runner.runScenario()'><b>runScenario</b><br>Test class: console_script.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Admin"</td>
+<td></td>
+<td>0</td>
+<td>console_script.Runner@7d8995e</td></tr>
 </table><p>
 </body>
 </html>

@@ -36,7 +36,7 @@
 			<artifactId>cucumber-testng</artifactId>
 			<version>7.18.1</version>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -74,4 +74,24 @@
 			<version>2.11.0</version> <!-- Check for the latest version -->
 		</dependency>
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<env.url>http://localhost:8080</env.url>
+			</properties>
+		</profile>
+		<profile>
+			<id>QA</id>
+			<properties>
+				<env.url>https://staging.example.com</env.url>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<env.url>https://www.example.co</env.url>
+			</properties>
+		</profile>
+	</profiles>
 </project>

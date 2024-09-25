@@ -1,28 +1,10 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-@tag
-Feature: UI sanity check on console
+@Sanity-Admin
+Feature: UI sanity check on console Admin
 
   @tag1
-  Scenario: login the application
+  Scenario: login the application Admin
     Given enter the URL
-    Then Login the application
+    When login the application Admin
 
   @tag2
   Scenario Outline: Check the values and Graphs in Recent activity on analytics page
@@ -120,10 +102,8 @@ Feature: UI sanity check on console
       | "Total Calls" |
       | "Voice Calls" |
       | "Video Calls" |
-      
-   # Quick over view section
-   #Scenario: check the total customers count on the quick overview
-   #When  click on the view details on the Total customers
-   #Then total customer value on the 
-     
-      
+
+  Scenario: logout the application
+    Given click on the profile initial
+    When click on the logout from the dropdown
+    Then click on the logout button

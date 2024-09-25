@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\guruprasad\Desktop\Automation_project\QAconsole_Script\testng.xml</span>
+                    <span>C:\Users\guru\Desktop\Automation_script\QAconsole_Script\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">22 methods,   22 passed</span>
+                    <span class="method-stats">46 methods, 2 failed,   44 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;logout the application&quot;, &quot;UI sanity check on console Admin&quot;)">runScenario("logout the application", "UI sanity check on console Admin")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;logout the application&quot;, &quot;UI sanity check on console Superadmin&quot;)">runScenario("logout the application", "UI sanity check on console Superadmin")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +123,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;login the application&quot;, &quot;UI sanity check on console&quot;)">runScenario("login the application", "UI sanity check on console")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;login the application Superadmin&quot;, &quot;UI sanity check on console Superadmin&quot;)">runScenario("login the application Superadmin", "UI sanity check on console Superadmin")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -114,12 +138,112 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;login the application Admin&quot;, &quot;UI sanity check on console Admin&quot;)">runScenario("login the application Admin", "UI sanity check on console Admin")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -144,7 +268,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total message section in Analytics Overview&quot;, &quot;UI sanity check on co...)">runScenario("Check the values and Graphs in Total message section in Analytics Overview", "UI sanity check on co...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,32 +293,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -194,12 +313,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -209,7 +328,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="console_script.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -224,6 +353,70 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">console_script.Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;logout the application&quot;, &quot;UI sanity check on console Admin&quot;)">
+                  </a> <!-- runScenario("logout the application", "UI sanity check on console Admin") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("logout the application", "UI sanity check on console Admin")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@class=&apos;logout&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51715/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b859f3f1addbfeab22f3d884a3e51836
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at console_script.sanity.click_on_the_logout_from_the_dropdown(sanity.java:162)
+	at ✽.click on the logout from the dropdown(file:///C:/Users/guru/Desktop/Automation_script/QAconsole_Script/src/main/java/feature_file/sanity_Admin.feature:108)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;logout the application&quot;, &quot;UI sanity check on console Superadmin&quot;)">
+                  </a> <!-- runScenario("logout the application", "UI sanity check on console Superadmin") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("logout the application", "UI sanity check on console Superadmin")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;logout&apos;]&quot;}
+  (Session info: chrome=129.0.6668.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b859f3f1addbfeab22f3d884a3e51836, findElement {value=//*[text()=&apos;logout&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\guru\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51715/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b859f3f1addbfeab22f3d884a3e51836
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at console_script.sanity.click_on_the_logout_button(sanity.java:168)
+	at ✽.click on the logout button(file:///C:/Users/guru/Desktop/Automation_script/QAconsole_Script/src/main/java/feature_file/sanity_SA.feature:109)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -232,10 +425,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;login the application&quot;, &quot;UI sanity check on console&quot;)">
-                  </a> <!-- runScenario("login the application", "UI sanity check on console") -->
+                  <a name="runScenario(&quot;login the application Superadmin&quot;, &quot;UI sanity check on console Superadmin&quot;)">
+                  </a> <!-- runScenario("login the application Superadmin", "UI sanity check on console Superadmin") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("login the application", "UI sanity check on console")</span>
+                  <span class="parameters">("login the application Superadmin", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -245,27 +448,67 @@
                   <a name="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">
                   </a> <!-- runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Admin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">
-                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console") -->
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">
-                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console") -->
+                  <a name="runScenario(&quot;login the application Admin&quot;, &quot;UI sanity check on console Admin&quot;)">
+                  </a> <!-- runScenario("login the application Admin", "UI sanity check on console Admin") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("login the application Admin", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Superadmin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -275,7 +518,167 @@
                   <a name="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">
                   </a> <!-- runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">
+                  </a> <!-- runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">
+                  </a> <!-- runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">
+                  </a> <!-- runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">
+                  </a> <!-- runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Superadmin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -285,7 +688,7 @@
                   <a name="runScenario(&quot;Check the values and Graphs in Total message section in Analytics Overview&quot;, &quot;UI sanity check on co...)">
                   </a> <!-- runScenario("Check the values and Graphs in Total message section in Analytics Overview", "UI sanity check on co...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Total message section in Analytics Overview", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in Total message section in Analytics Overview", "UI sanity check on console Superadmin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -295,7 +698,7 @@
                   <a name="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">
                   </a> <!-- runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Admin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -305,37 +708,7 @@
                   <a name="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">
                   </a> <!-- runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">
-                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">
-                  </a> <!-- runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">
-                  </a> <!-- runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Admin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -345,57 +718,27 @@
                   <a name="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">
                   </a> <!-- runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Superadmin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">
-                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console") -->
+                  <a name="runScenario(&quot;Check the values and Graphs in Total message section in Analytics Overview&quot;, &quot;UI sanity check on co...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Total message section in Analytics Overview", "UI sanity check on co...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in Total message section in Analytics Overview", "UI sanity check on console Admin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">
-                  </a> <!-- runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...) -->
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">
-                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">
-                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">
-                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -405,27 +748,7 @@
                   <a name="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">
                   </a> <!-- runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">
-                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">
-                  </a> <!-- runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Superadmin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -435,17 +758,107 @@
                   <a name="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">
                   </a> <!-- runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Superadmin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console&quot;)">
-                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console") -->
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">
+                  </a> <!-- runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in New User section in Analytics Overview on analytics page&quot;, &quot;UI sanit...)">
+                  </a> <!-- runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Total calls section in Analytics Overview on analytics page&quot;, &quot;UI sa...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Admi...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Recent activity on analytics page&quot;, &quot;UI sanity check on console Supe...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Superadmin")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page&quot;...)">
+                  </a> <!-- runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page", "UI sanity check on console Admin")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -455,7 +868,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\guruprasad\Desktop\Automation_project\QAconsole_Script\testng.xml</span>
+            <span class="header-content">C:\Users\guru\Desktop\Automation_script\QAconsole_Script\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -512,100 +925,196 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(22);
+data.addRows(46);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'console_script.Runner')
-data.setCell(0, 3, 11430);
+data.setCell(0, 3, 10482);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'console_script.Runner')
-data.setCell(1, 3, 4067);
+data.setCell(1, 3, 3758);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'console_script.Runner')
-data.setCell(2, 3, 3111);
+data.setCell(2, 3, 3730);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'console_script.Runner')
-data.setCell(3, 3, 2976);
+data.setCell(3, 3, 690);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'console_script.Runner')
-data.setCell(4, 3, 2940);
+data.setCell(4, 3, 670);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'console_script.Runner')
-data.setCell(5, 3, 2856);
+data.setCell(5, 3, 654);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'console_script.Runner')
-data.setCell(6, 3, 2825);
+data.setCell(6, 3, 425);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'console_script.Runner')
-data.setCell(7, 3, 2802);
+data.setCell(7, 3, 386);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'console_script.Runner')
-data.setCell(8, 3, 2798);
+data.setCell(8, 3, 379);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'runScenario')
 data.setCell(9, 2, 'console_script.Runner')
-data.setCell(9, 3, 2778);
+data.setCell(9, 3, 375);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'runScenario')
 data.setCell(10, 2, 'console_script.Runner')
-data.setCell(10, 3, 2721);
+data.setCell(10, 3, 333);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'runScenario')
 data.setCell(11, 2, 'console_script.Runner')
-data.setCell(11, 3, 2691);
+data.setCell(11, 3, 316);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'runScenario')
 data.setCell(12, 2, 'console_script.Runner')
-data.setCell(12, 3, 2669);
+data.setCell(12, 3, 289);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'runScenario')
 data.setCell(13, 2, 'console_script.Runner')
-data.setCell(13, 3, 2613);
+data.setCell(13, 3, 279);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'runScenario')
 data.setCell(14, 2, 'console_script.Runner')
-data.setCell(14, 3, 2601);
+data.setCell(14, 3, 268);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'runScenario')
 data.setCell(15, 2, 'console_script.Runner')
-data.setCell(15, 3, 2569);
+data.setCell(15, 3, 261);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'runScenario')
 data.setCell(16, 2, 'console_script.Runner')
-data.setCell(16, 3, 2553);
+data.setCell(16, 3, 261);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'runScenario')
 data.setCell(17, 2, 'console_script.Runner')
-data.setCell(17, 3, 2547);
+data.setCell(17, 3, 246);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'runScenario')
 data.setCell(18, 2, 'console_script.Runner')
-data.setCell(18, 3, 2532);
+data.setCell(18, 3, 240);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'runScenario')
 data.setCell(19, 2, 'console_script.Runner')
-data.setCell(19, 3, 2471);
+data.setCell(19, 3, 238);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'runScenario')
 data.setCell(20, 2, 'console_script.Runner')
-data.setCell(20, 3, 2451);
+data.setCell(20, 3, 233);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'runScenario')
 data.setCell(21, 2, 'console_script.Runner')
-data.setCell(21, 3, 239);
+data.setCell(21, 3, 230);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'console_script.Runner')
+data.setCell(22, 3, 226);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'console_script.Runner')
+data.setCell(23, 3, 220);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'console_script.Runner')
+data.setCell(24, 3, 215);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'console_script.Runner')
+data.setCell(25, 3, 215);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'console_script.Runner')
+data.setCell(26, 3, 202);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'console_script.Runner')
+data.setCell(27, 3, 187);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'console_script.Runner')
+data.setCell(28, 3, 184);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'console_script.Runner')
+data.setCell(29, 3, 181);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'console_script.Runner')
+data.setCell(30, 3, 171);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'console_script.Runner')
+data.setCell(31, 3, 170);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'console_script.Runner')
+data.setCell(32, 3, 167);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'runScenario')
+data.setCell(33, 2, 'console_script.Runner')
+data.setCell(33, 3, 166);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'runScenario')
+data.setCell(34, 2, 'console_script.Runner')
+data.setCell(34, 3, 165);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'runScenario')
+data.setCell(35, 2, 'console_script.Runner')
+data.setCell(35, 3, 163);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'runScenario')
+data.setCell(36, 2, 'console_script.Runner')
+data.setCell(36, 3, 155);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'runScenario')
+data.setCell(37, 2, 'console_script.Runner')
+data.setCell(37, 3, 153);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'runScenario')
+data.setCell(38, 2, 'console_script.Runner')
+data.setCell(38, 3, 149);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'runScenario')
+data.setCell(39, 2, 'console_script.Runner')
+data.setCell(39, 3, 148);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'runScenario')
+data.setCell(40, 2, 'console_script.Runner')
+data.setCell(40, 3, 143);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'runScenario')
+data.setCell(41, 2, 'console_script.Runner')
+data.setCell(41, 3, 141);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'runScenario')
+data.setCell(42, 2, 'console_script.Runner')
+data.setCell(42, 3, 137);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'runScenario')
+data.setCell(43, 2, 'console_script.Runner')
+data.setCell(43, 3, 120);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'runScenario')
+data.setCell(44, 2, 'console_script.Runner')
+data.setCell(44, 3, 100);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'runScenario')
+data.setCell(45, 2, 'console_script.Runner')
+data.setCell(45, 3, 85);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -633,108 +1142,208 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">console_script.Runner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@718a64b4)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@77ea960f)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">browserlaunchconfiguration</span>
-                <span class="method-start">1008 ms</span>
+                <span class="method-start">469 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("login the application", "UI sanity check on console")</span>
-                <span class="method-start">46766 ms</span>
+                <span class="method-name">runScenario("login the application Admin", "UI sanity check on console Admin")</span>
+                <span class="method-start">2958 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                <span class="method-start">58204 ms</span>
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</span>
+                <span class="method-start">6719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                <span class="method-start">61320 ms</span>
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</span>
+                <span class="method-start">7107 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                <span class="method-start">64181 ms</span>
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</span>
+                <span class="method-start">7424 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                <span class="method-start">67125 ms</span>
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</span>
+                <span class="method-start">7800 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                <span class="method-start">71196 ms</span>
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</span>
+                <span class="method-start">8226 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                <span class="method-start">73983 ms</span>
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</span>
+                <span class="method-start">8465 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                <span class="method-start">76816 ms</span>
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</span>
+                <span class="method-start">8681 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                <span class="method-start">79796 ms</span>
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</span>
+                <span class="method-start">9015 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console")</span>
-                <span class="method-start">82599 ms</span>
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Admi...)</span>
+                <span class="method-start">9283 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in Total message section in Analytics Overview", "UI sanity check on co...)</span>
-                <span class="method-start">85399 ms</span>
+                <span class="method-start">9525 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</span>
-                <span class="method-start">85640 ms</span>
+                <span class="method-start">9626 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</span>
-                <span class="method-start">88366 ms</span>
+                <span class="method-start">10317 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</span>
-                <span class="method-start">90946 ms</span>
+                <span class="method-start">10484 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</span>
-                <span class="method-start">93401 ms</span>
+                <span class="method-start">10669 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</span>
-                <span class="method-start">96076 ms</span>
+                <span class="method-start">10841 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</span>
-                <span class="method-start">98629 ms</span>
+                <span class="method-start">11076 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</span>
-                <span class="method-start">101206 ms</span>
+                <span class="method-start">11244 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</span>
-                <span class="method-start">103813 ms</span>
+                <span class="method-start">11410 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...)</span>
-                <span class="method-start">106508 ms</span>
+                <span class="method-start">11591 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...)</span>
-                <span class="method-start">108980 ms</span>
+                <span class="method-start">11778 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...)</span>
-                <span class="method-start">111515 ms</span>
+                <span class="method-start">12009 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("logout the application", "UI sanity check on console Admin")</span>
+                <span class="method-start">12224 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("login the application Superadmin", "UI sanity check on console Superadmin")</span>
+                <span class="method-start">22708 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</span>
+                <span class="method-start">26439 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</span>
+                <span class="method-start">26700 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</span>
+                <span class="method-start">26980 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</span>
+                <span class="method-start">27241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</span>
+                <span class="method-start">27620 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</span>
+                <span class="method-start">27840 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</span>
+                <span class="method-start">28042 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</span>
+                <span class="method-start">28332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Recent activity on analytics page", "UI sanity check on console Supe...)</span>
+                <span class="method-start">28579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Total message section in Analytics Overview", "UI sanity check on co...)</span>
+                <span class="method-start">28806 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</span>
+                <span class="method-start">28892 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</span>
+                <span class="method-start">29562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</span>
+                <span class="method-start">29711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</span>
+                <span class="method-start">29867 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in New User section in Analytics Overview on analytics page", "UI sanit...)</span>
+                <span class="method-start">30021 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</span>
+                <span class="method-start">30164 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</span>
+                <span class="method-start">30284 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Total call Duration section in Analytics Overview on analytics page"...)</span>
+                <span class="method-start">30426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...)</span>
+                <span class="method-start">30576 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...)</span>
+                <span class="method-start">30713 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check the values and Graphs in Total calls section in Analytics Overview on analytics page", "UI sa...)</span>
+                <span class="method-start">30877 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("logout the application", "UI sanity check on console Superadmin")</span>
+                <span class="method-start">31047 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">browserQuitconfiguration</span>
-                <span class="method-start">114132 ms</span>
+                <span class="method-start">31703 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">114691 ms</span>
+                <span class="method-start">32012 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
