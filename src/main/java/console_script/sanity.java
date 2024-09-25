@@ -14,9 +14,11 @@ import io.cucumber.java.en.When;
 
 public class sanity extends method {
 	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+	@Given("enter the URL")
 	public void enter_the_url() {
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+//		driver = new ChromeDriver();
+//		System.out.println(driver);
+//		driver.manage().window().maximize();
 		driver.get("https://console.mirrorfly.com");
 	}
 
