@@ -2,7 +2,7 @@ package console_script;
 
 import org.openqa.selenium.By;
 
-public class Element {
+public class Element  {
 	//login page 
 	public static By emailfield = By.xpath("//*[@label ='email']");
 	public static By password = By.xpath("//*[@label ='password']");

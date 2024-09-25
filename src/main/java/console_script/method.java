@@ -82,6 +82,13 @@ public class method extends Element {
 			System.out.println(e);
 		}
 	}
+	
+	public static void handlerException(Runnable operation){
+		try {
+			operation.run();
+		} catch (Exception e) {
+		}
+	}
 
 	public static void Graph_and_value(By Value, By graphXaxis, By graphYaxis) {
 		WebElement value = driver.findElement(Value);
