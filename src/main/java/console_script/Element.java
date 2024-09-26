@@ -11,7 +11,7 @@ public class Element extends Runner {
 	//logout
 	public static By profile_initial = By.xpath("//span[@class='profileInitial']");
 	public static By logout = By.xpath("//*[@class='logout']");
-	public static By logout_btn = By.xpath("//*[text()='logout']");
+	public static By logout_btn = By.xpath("//span[text()='Logout']");
 	// Analytics page
 	/// recent activity section
 	public static By plan_Type_Dropdown = By.xpath("//*[@for ='planTypeId']");
@@ -40,5 +40,13 @@ public class Element extends Runner {
 	public static By graph_Yaxis (int index) {
 		return By.xpath("(//div[@class='recharts-wrapper'])["+index+"]//*[@class='recharts-layer recharts-cartesian-axis recharts-yAxis yAxis']");
 	}
-	
+	//// quick over view 
+	public static By cardvalue(int index) {
+		return By.xpath("(//span[@class='cardValue'])["+index+"]");
+	}
+	public static By Viewdetails(int index) {
+		return By.xpath("(//span[text()='View details'])["+index+"]");
+	}
+	public static By info= By.xpath("//span[@class='info']");
+	public static By home_page_btn = By.xpath("(//a[@href='/analytics'])[1]");
 }
