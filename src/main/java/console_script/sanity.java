@@ -12,6 +12,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
+
 public class sanity extends method {
 	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -155,71 +157,71 @@ public class sanity extends method {
 
 //////
 	static String value;
-	@Given("Get the value on the total customer on the dashboard")
-	public void get_the_value_on_the_total_customer_on_the_dashboard() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("Click on the view details on total customer")
-	public void click_on_the_view_details_on_total_customer() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
-
-	@When("total customer value on the dashboard and on the customer is equal")
-	public void total_customer_value_on_the_dashboard_and_on_the_customer_is_equal() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("Get the value on the Active Customers on the dashboard")
-	public void get_the_value_on_the_active_customers_on_the_dashboard() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("Click on the view details on active customer")
-	public void click_on_the_view_details_on_active_customer() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
-
-	@When("Active Customers value on the dashboard and on the customer is equal")
-	public void active_customers_value_on_the_dashboard_and_on_the_customer_is_equal() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("Get the value on the Trial Customers on the dashboard")
-	public void get_the_value_on_the_trial_customers_on_the_dashboard() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("Click on the view details on trial customer")
-	public void click_on_the_view_details_on_trial_customer() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
-
-	@When("Trial Customers value on the dashboard and on the customer is equal")
-	public void trial_customers_value_on_the_dashboard_and_on_the_customer_is_equal() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("Click on the view details by total paid customer")
-	public void click_on_the_view_details_by_total_paid_customer() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
-
-	@When("Total Paid Customers value on the dashboard and on the payments page is equal")
-	public void total_paid_customers_value_on_the_dashboard_and_on_the_payments_page_is_equal() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
+//	@Given("Get the value on the total customer on the dashboard")
+//	public void get_the_value_on_the_total_customer_on_the_dashboard() {
+//		// Write code here that turns the phrase above into concrete actions
+//		throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@Given("Click on the view details on total customer")
+//	public void click_on_the_view_details_on_total_customer() {
+//		// Write code here that turns the phrase above into concrete actions
+//		throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@When("total customer value on the dashboard and on the customer is equal")
+//	public void total_customer_value_on_the_dashboard_and_on_the_customer_is_equal() {
+//		// Write code here that turns the phrase above into concrete actions
+//		throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@Given("Get the value on the Active Customers on the dashboard")
+//	public void get_the_value_on_the_active_customers_on_the_dashboard() {
+//		// Write code here that turns the phrase above into concrete actions
+//		throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@Given("Click on the view details on active customer")
+//	public void click_on_the_view_details_on_active_customer() {
+//		// Write code here that turns the phrase above into concrete actions
+//		throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@When("Active Customers value on the dashboard and on the customer is equal")
+//	public void active_customers_value_on_the_dashboard_and_on_the_customer_is_equal() {
+//		// Write code here that turns the phrase above into concrete actions
+//		throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@Given("Get the value on the Trial Customers on the dashboard")
+//	public void get_the_value_on_the_trial_customers_on_the_dashboard() {
+//		// Write code here that turns the phrase above into concrete actions
+//		throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@Given("Click on the view details on trial customer")
+//	public void click_on_the_view_details_on_trial_customer() {
+//		// Write code here that turns the phrase above into concrete actions
+//		throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@When("Trial Customers value on the dashboard and on the customer is equal")
+//	public void trial_customers_value_on_the_dashboard_and_on_the_customer_is_equal() {
+//		// Write code here that turns the phrase above into concrete actions
+//		throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@Given("Click on the view details by total paid customer")
+//	public void click_on_the_view_details_by_total_paid_customer() {
+//		// Write code here that turns the phrase above into concrete actions
+//		throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@When("Total Paid Customers value on the dashboard and on the payments page is equal")
+//	public void total_paid_customers_value_on_the_dashboard_and_on_the_payments_page_is_equal() {
+//		// Write code here that turns the phrase above into concrete actions
+//		throw new io.cucumber.java.PendingException();
+//	}
 
 	// -------------------logout--------------------------------------------//
 
