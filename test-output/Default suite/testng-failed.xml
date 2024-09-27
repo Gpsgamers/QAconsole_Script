@@ -8,7 +8,7 @@
           <include name="setUpClass"/>
           <include name="browserQuitconfiguration"/>
           <include name="browserlaunchconfiguration"/>
-          <include name="runScenario" invocation-numbers="22 45"/>
+          <include name="runScenario"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- console_script.Runner -->
