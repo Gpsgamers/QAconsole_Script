@@ -3,7 +3,6 @@ Feature: UI sanity check on console Admin
 
   @tag1
   Scenario: login the application Admin
-    Given enter the URL
     When login the application Admin
 
   @tag2
@@ -103,6 +102,27 @@ Feature: UI sanity check on console Admin
       | "Voice Calls" |
       | "Video Calls" |
 
+  Scenario: verify the total customers values on Quick over view dashboard and total customer values on the filtered view is equal
+    Given Get the value on the total customer on the dashboard
+    And Click on the view details on total customer
+    When total customer value on the dashboard and on the customer is equal
+
+  Scenario: verify the Active Customers values on Quick over view dashboard and Active Customers values on the filtered view is equal
+    Given Get the value on the Active Customers on the dashboard
+    And Click on the view details on active customer
+    When Active Customers value on the dashboard and on the customer is equal
+
+  Scenario: verify the Trial Customers values on Quick over view dashboard and Trial Customers values on the filtered view is equal
+    Given Get the value on the Trial Customers on the dashboard
+    And Click on the view details on trial customer
+    When Trial Customers value on the dashboard and on the customer is equal
+
+  Scenario: verify the Total Paid Customers values on Quick over view dashboard and Total Paid Customers values on the filtered view is equal
+    Given Get the value on the Total Paid Customers on the dashboard
+    And Click on the view details by total paid customer
+    When Total Paid Customers value on the dashboard and on the payments page is equal
+
+  #############################################################################################
   Scenario: logout the application
     Given click on the profile initial
     When click on the logout from the dropdown

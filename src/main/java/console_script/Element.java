@@ -7,7 +7,7 @@ public class Element extends Runner {
 	public static By emailfield = By.xpath("//*[@label ='email']");
 	public static By password = By.xpath("//*[@label ='password']");
 	public static By sign_in = By.xpath("//*[text() ='Sign In']");
-	public static By pageloader = By.xpath("//div[@class='pageLoader ']");
+	public static By pageloader = By.xpath("(//div[@class='pageLoader fixed overlay'])[1]");
 	//logout
 	public static By profile_initial = By.xpath("//span[@class='profileInitial']");
 	public static By logout = By.xpath("//*[@class='logout']");
@@ -49,4 +49,5 @@ public class Element extends Runner {
 	}
 	public static By info= By.xpath("//span[@class='info']");
 	public static By home_page_btn = By.xpath("(//a[@href='/analytics'])[1]");
+	public static By no_customer_label=By.xpath("//span[text()='No customers found']");
 }

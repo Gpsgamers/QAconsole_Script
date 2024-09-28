@@ -3,7 +3,6 @@ package console_script;
 import java.time.Duration;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -12,30 +11,18 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-
-
 public class sanity extends method {
 	public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-	@Given("enter the URL")
-	public void enter_the_url() {
-//		driver = new ChromeDriver();
-//		System.out.println(driver);
-//		driver.manage().window().maximize();
-		driver.get("https://console.mirrorfly.com");
-	}
 
 	@When("login the application Superadmin")
 	public void login_the_application_Superadmin() throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(sign_in));
 		login("rahul.s@contus.in", "SuperAdmin!@#$1234");
-		Thread.sleep(3000);
 	}
 
 	@When("login the application Admin")
 	public void login_the_application_Admin() throws InterruptedException {
 		login("rahul.s@contus.in", "SuperAdmin!@#$1234");
-		Thread.sleep(3000);
 	}
 
 	@Given("on {int}")
@@ -45,7 +32,7 @@ public class sanity extends method {
 		} catch (Exception e) {
 
 		}
-		WebElement Top_active_users = driver.findElement(Top_Active_Users(int1));
+		WebElement Top_active_users = wait.until(ExpectedConditions.visibilityOfElementLocated(Top_Active_Users(int1)));
 		if (Top_active_users.getAttribute("class").equals("active") == false) {
 			Top_active_users.click();
 		}
@@ -157,71 +144,104 @@ public class sanity extends method {
 
 //////
 	static String value;
-//	@Given("Get the value on the total customer on the dashboard")
-//	public void get_the_value_on_the_total_customer_on_the_dashboard() {
-//		// Write code here that turns the phrase above into concrete actions
-//		throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Given("Click on the view details on total customer")
-//	public void click_on_the_view_details_on_total_customer() {
-//		// Write code here that turns the phrase above into concrete actions
-//		throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@When("total customer value on the dashboard and on the customer is equal")
-//	public void total_customer_value_on_the_dashboard_and_on_the_customer_is_equal() {
-//		// Write code here that turns the phrase above into concrete actions
-//		throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Given("Get the value on the Active Customers on the dashboard")
-//	public void get_the_value_on_the_active_customers_on_the_dashboard() {
-//		// Write code here that turns the phrase above into concrete actions
-//		throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Given("Click on the view details on active customer")
-//	public void click_on_the_view_details_on_active_customer() {
-//		// Write code here that turns the phrase above into concrete actions
-//		throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@When("Active Customers value on the dashboard and on the customer is equal")
-//	public void active_customers_value_on_the_dashboard_and_on_the_customer_is_equal() {
-//		// Write code here that turns the phrase above into concrete actions
-//		throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Given("Get the value on the Trial Customers on the dashboard")
-//	public void get_the_value_on_the_trial_customers_on_the_dashboard() {
-//		// Write code here that turns the phrase above into concrete actions
-//		throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Given("Click on the view details on trial customer")
-//	public void click_on_the_view_details_on_trial_customer() {
-//		// Write code here that turns the phrase above into concrete actions
-//		throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@When("Trial Customers value on the dashboard and on the customer is equal")
-//	public void trial_customers_value_on_the_dashboard_and_on_the_customer_is_equal() {
-//		// Write code here that turns the phrase above into concrete actions
-//		throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Given("Click on the view details by total paid customer")
-//	public void click_on_the_view_details_by_total_paid_customer() {
-//		// Write code here that turns the phrase above into concrete actions
-//		throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@When("Total Paid Customers value on the dashboard and on the payments page is equal")
-//	public void total_paid_customers_value_on_the_dashboard_and_on_the_payments_page_is_equal() {
-//		// Write code here that turns the phrase above into concrete actions
-//		throw new io.cucumber.java.PendingException();
-//	}
+
+	@Given("Get the value on the total customer on the dashboard")
+	public void get_the_value_on_the_total_customer_on_the_dashboard() {
+		WebElement total_customers = wait.until(ExpectedConditions.visibilityOfElementLocated(cardvalue(1)));
+		value = total_customers.getText();
+		System.out.println(value);
+	}
+
+	@Given("Click on the view details on total customer")
+	public void click_on_the_view_details_on_total_customer() {
+		WebElement view_details = wait.until(ExpectedConditions.visibilityOfElementLocated(Viewdetails(1)));
+		view_details.click();
+	}
+
+	@When("total customer value on the dashboard and on the customer is equal")
+	public void total_customer_value_on_the_dashboard_and_on_the_customer_is_equal() throws InterruptedException {
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(pageloader));
+		WebElement Info = wait.until(ExpectedConditions.visibilityOfElementLocated(info));
+		scrollToelement(Info);
+		String s = Info.getText().split(" ")[5];
+		System.out.println(s);
+		Assert.assertTrue(value.equals(s), "values are not matching");
+	}
+
+	@Given("Get the value on the Active Customers on the dashboard")
+	public void get_the_value_on_the_active_customers_on_the_dashboard() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(home_page_btn)).click();
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(pageloader));
+		WebElement Active_Customers = wait.until(ExpectedConditions.visibilityOfElementLocated(cardvalue(2)));
+		value = Active_Customers.getText();
+		System.out.println(value);
+	}
+
+	@Given("Click on the view details on active customer")
+	public void click_on_the_view_details_on_active_customer() {
+		WebElement view_details = wait.until(ExpectedConditions.visibilityOfElementLocated(Viewdetails(2)));
+		view_details.click();
+	}
+
+	@When("Active Customers value on the dashboard and on the customer is equal")
+	public void active_customers_value_on_the_dashboard_and_on_the_customer_is_equal() throws InterruptedException {
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(pageloader));
+		WebElement Info = wait.until(ExpectedConditions.visibilityOfElementLocated(info));
+		scrollToelement(Info);
+		String s = Info.getText().split(" ")[5];
+		System.out.println(s);
+		Assert.assertTrue(value.equals(s), "values are not matching");
+	}
+
+	@Given("Get the value on the Trial Customers on the dashboard")
+	public void get_the_value_on_the_trial_customers_on_the_dashboard() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(home_page_btn)).click();
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(pageloader));
+		WebElement Trial_Customers = wait.until(ExpectedConditions.visibilityOfElementLocated(cardvalue(3)));
+		value = Trial_Customers.getText();
+		System.out.println(value);
+	}
+
+	@Given("Click on the view details on trial customer")
+	public void click_on_the_view_details_on_trial_customer() {
+		WebElement view_details = wait.until(ExpectedConditions.visibilityOfElementLocated(Viewdetails(3)));
+		view_details.click();
+	}
+
+	@When("Trial Customers value on the dashboard and on the customer is equal")
+	public void trial_customers_value_on_the_dashboard_and_on_the_customer_is_equal() {
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(pageloader));
+		WebElement Info = wait.until(ExpectedConditions.visibilityOfElementLocated(info));
+		scrollToelement(Info);
+		String s = Info.getText().split(" ")[5];
+		System.out.println(s);
+		Assert.assertTrue(value.equals(s), "values are not matching");
+	}
+	
+	@Given("Get the value on the Total Paid Customers on the dashboard")
+	public void Get_the_value_on_the_Total_Paid_Customers_on_the_dashboard() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(home_page_btn)).click();
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(pageloader));
+		WebElement Trial_Customers = wait.until(ExpectedConditions.visibilityOfElementLocated(cardvalue(4)));
+		value = Trial_Customers.getText();
+		System.out.println(value);
+	}
+
+	@Given("Click on the view details by total paid customer")
+	public void click_on_the_view_details_by_total_paid_customer() {
+		WebElement view_details = wait.until(ExpectedConditions.visibilityOfElementLocated(Viewdetails(4)));
+		view_details.click();
+	}
+
+	@When("Total Paid Customers value on the dashboard and on the payments page is equal")
+	public void total_paid_customers_value_on_the_dashboard_and_on_the_payments_page_is_equal() {
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(pageloader));
+		WebElement Info = wait.until(ExpectedConditions.visibilityOfElementLocated(info));
+		scrollToelement(Info);
+		String s = Info.getText().split(" ")[5];
+		System.out.println(s);
+		Assert.assertTrue(value.equals(s), "values are not matching");
+	}
 
 	// -------------------logout--------------------------------------------//
 

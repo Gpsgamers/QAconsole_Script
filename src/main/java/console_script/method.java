@@ -107,4 +107,5 @@ public class method extends Element {
 			Assert.assertTrue(GraphXaxis && GraphYaxis, "graph is not displayed");
 		}
 	}
+	
 }

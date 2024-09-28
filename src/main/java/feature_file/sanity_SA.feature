@@ -3,7 +3,6 @@ Feature: UI sanity check on console Superadmin
 
   @tag1
   Scenario: login the application Superadmin
-    Given enter the URL
     When login the application Superadmin
 
   ##############################################################################################
@@ -120,7 +119,7 @@ Feature: UI sanity check on console Superadmin
     When Trial Customers value on the dashboard and on the customer is equal
 
   Scenario: verify the Total Paid Customers values on Quick over view dashboard and Total Paid Customers values on the filtered view is equal
-    Given Get the value on the Trial Customers on the dashboard
+    Given Get the value on the Total Paid Customers on the dashboard
     And Click on the view details by total paid customer
     When Total Paid Customers value on the dashboard and on the payments page is equal
 
