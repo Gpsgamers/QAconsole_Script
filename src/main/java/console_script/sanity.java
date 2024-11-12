@@ -17,12 +17,12 @@ public class sanity extends method {
 	@When("login the application Superadmin")
 	public void login_the_application_Superadmin() throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(sign_in));
-		login("rahul.s@contus.in", "SuperAdmin!@#$1234");
+		login(SA_username, SA_pass_word);
 	}
 
 	@When("login the application Admin")
 	public void login_the_application_Admin() throws InterruptedException {
-		login("rahul.s@contus.in", "SuperAdmin!@#$1234");
+		login(Admin_username, Admin_pass_word);
 	}
 
 	@Given("on {int}")

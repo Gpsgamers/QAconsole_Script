@@ -12,17 +12,13 @@ import org.testng.annotations.Parameters;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(
-		features = {
-				"src\\main\\java\\feature_file\\sanity_SA.feature",
-				"src\\main\\java\\feature_file\\sanity_Admin.feature"
-				}, // Path to feature files
+@CucumberOptions(features = { "src\\main\\java\\feature_file\\sanity_SA.feature",
+		"src\\main\\java\\feature_file\\sanity_Admin.feature" }, // Path to feature files
 		glue = { "console_script" }, // Package for step definitions
 		plugin = { "pretty", // For console output
 				"html:target/cucumber-reports/Cucumber.html", // HTML report
 				"json:target/cucumber-reports/Cucumber.json" // JSON report
-		},
-		monochrome = true // To make console output more readable
+		}, monochrome = true // To make console output more readable
 
 )
 public class Runner extends AbstractTestNGCucumberTests {
@@ -30,8 +26,8 @@ public class Runner extends AbstractTestNGCucumberTests {
 	public static String Browser, SA_username, SA_pass_word, Admin_username, Admin_pass_word, url;
 
 	@BeforeClass
-	@Parameters({"browser","environment"})
-	public void browserlaunchconfiguration(String browser, String environment ) {
+	@Parameters({ "browser", "environment" })
+	public void browserlaunchconfiguration(String browser, String environment) {
 		launchbrowser(browser);
 		Environment(environment);
 		driver.manage().window().maximize();
@@ -42,17 +38,17 @@ public class Runner extends AbstractTestNGCucumberTests {
 	public static void browserQuitconfiguration() {
 		driver.quit();
 	}
-	
+
 	public void launchbrowser(String browser) {
-		if(browser.equals("Chrome")) {
+		if (browser.equals("Chrome")) {
 			driver = new ChromeDriver();
-		}else if (browser.equals("Edge")) {
+		} else if (browser.equals("Edge")) {
 			driver = new EdgeDriver();
-		}else if (browser.equals("Firefox")){
-			driver=new FirefoxDriver();
-		}else if (browser.equals("Safari")){
+		} else if (browser.equals("Firefox")) {
+			driver = new FirefoxDriver();
+		} else if (browser.equals("Safari")) {
 			driver = new SafariDriver();
-		}else {
+		} else {
 			driver = null;
 		}
 	}
